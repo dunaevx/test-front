@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    
+    margin: 0;
+    padding: 0;
+    
+    color: #e8e8e8;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,11,101,1) 0%, rgba(0,125,150,1) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    
+    border-radius: 5px;
+    background-color: #0f9ac9c3;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #002e749a;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px 10px;
+    
+    color: #fff;
+    background-color: transparent;
+    border: .5px solid #e8e8e882;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0000001d;
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+#sort-select {
+    padding: 5px 10px;
+    
+    background-color: transparent;
+    color: #e8e8e8;
+    border-radius: 5px;
+}
+
+option {
+    background-color: #284980;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    border: none;
+}
+
+#filter-input {
+    all: initial;
+    padding-block: 5px;
+    
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: aliceblue;
+    
+    font-size: 18px;
+
+    &::placeholder {
+        color: #e8e8e8;
+        padding: 5px 2px;
+        font-size: 15px;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container__bar {
+    padding: 20px;
+
+    text-align: center;
+    
+    border-radius: 0 0 30px 30px;
+    background-color: transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#user-list {
+    padding-block: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user {
+    width: 230px;
+    height: 230px;
+
+    margin-bottom: 10px;
+    
+    border-radius: 40px 28px 28px 28px;
+    background: rgb(2,0,36);
+    background: rgb(2,0,36);
+    background-color: transparent;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    
+    overflow: hidden;
+}
+
+.user-hidden{
+    padding: 10px 20px  ;
+    width: 100%;
+    height: 100%;
+
+    background-color: #5171a841;
+    border-radius: 40px 10px 0 0;
+
+    transform: translateY(135px);
+    transition: 1s transform  ease;
+
+    &:hover{
+        transform: translateY(0px);
+    }
+}
+
+.user__h2{
+    margin-bottom: 30px;
+}
+
+.user__h2, .user__email{
+    width: 200px;
+   
+    word-wrap: break-all;
+}
+
+.error-msg {
+    color: red;
+    font-style: italic;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json card</title>
+</head>
+<body>
+    <div class="container__bar">
+        <h1 class="container__title">Список пользователей</h1>
+        <div class="container__select">
+            <label for="sort-select">Сортировать по:</label>
+            <select id="sort-select">
+                <option value="name">Имя</option>
+                <option value="email">Почта</option>
+            </select>
+            <button class="container__button" onclick="sortUsers()">Сортировать</button>
+        </div>
+        <div class="container__filter">
+            <input type="text" id="filter-input" placeholder="Поиск" oninput="filterUsers()">
+        </div>
+    </div>
+    <div class="container">
+        <div id="user-list"></div>
+    </div>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
